@@ -1,4 +1,6 @@
 [![License](https://img.shields.io/github/license/ps3dev/ps3toolchain.svg)](./LICENSE)
+[![CI](https://github.com/humbertodias/ps3toolchain/actions/workflows/deploy.yaml/badge.svg)](https://github.com/humbertodias/ps3toolchain/actions/workflows/deploy.yaml)
+[![ci-docker](https://github.com/humbertodias/ps3toolchain/actions/workflows/deploy-docker.yaml/badge.svg)](https://github.com/humbertodias/ps3toolchain/actions/workflows/deploy-docker.yaml)
 
   What does this do?
  ====================
