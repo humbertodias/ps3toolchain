@@ -6,8 +6,8 @@ SHELL ["/bin/bash", "-c"]
 
 ENV PS3DEV /usr/local/ps3dev
 ENV PSL1GHT ${PS3DEV}
-ENV PATH ${PATH}:${PS3DEV}/bin:${PS3DEV}/ppu/bin:${PS3DEV}/spu/bin
-ENV PKG_CONFIG_PATH $PS3DEV/portlibs/ppu/lib/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig
+ENV PATH ${PATH}:${PS3DEV}/bin:${PS3DEV}/ppu/bin:${PS3DEV}/spu/bin:${PS3DEV}/portlibs/ppu/bin
+ENV PKG_CONFIG_PATH $PS3DEV/portlibs/ppu/lib/pkgconfig
 
 ENV DEBIAN_FRONTEND=noninteractive
 # last python version with diskutils module support
@@ -30,7 +30,7 @@ RUN \
   pyenv rehash && \
   # pyenv
   apt -y clean autoclean autoremove
-
+  
 RUN mkdir /build
 WORKDIR /build
 COPY . /build
