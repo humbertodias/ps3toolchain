@@ -13,6 +13,9 @@ on:
 
 jobs:
   dockerhub-push:
+    # Always skipped. Pushing :latest needs the DockerHub environment, which
+    # fails closed in a few seconds when those secrets are unavailable.
+    if: false
     runs-on: ubuntu-latest
     environment: DockerHub
     env:
